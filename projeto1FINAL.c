@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int i, j; //contadores
-
 void abreEntrada(FILE **entrada);
 void abreSaida(int opcao, FILE **saida);
 void copiaCabecalho(FILE *entrada, FILE *saida);
@@ -226,6 +224,7 @@ void histograma(FILE *entrada, FILE *saida)
     fscanf(entrada, "%d", &max_cinza);
     /* --------------------------------------- */
 
+    int i; //contador
     int vet[256] = {0}; //numero max de valor possivel atribuido
 
     int pixel; //guarda o valor de cada pixel
